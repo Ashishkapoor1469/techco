@@ -9,6 +9,7 @@ import { Search, Filter, Star, Download, ExternalLink, Sparkles } from "lucide-r
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const frameworks = [
   {
@@ -180,7 +181,7 @@ export default function FrameworksPage() {
               <CardHeader className="pb-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <img src={framework.logo || "/placeholder.svg"} alt={framework.name} className="w-10 h-10" />
+                    <Image src={framework.logo || "/placeholder.svg"} alt={framework.name} className="w-10 h-10" width={40} height={40} />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">

@@ -303,7 +303,7 @@ export default function SearchPage() {
                 <div className="w-24 h-24 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-12 h-12 text-gray-400" />
                 </div>
-                <p className="text-gray-500 text-lg">No people found matching "{searchTerm}"</p>
+                <p className="text-gray-500 text-lg">No people found matching `{searchTerm}`</p>
                 <p className="text-gray-400 text-sm mt-2">Try adjusting your search terms</p>
               </div>
             )}
@@ -312,7 +312,7 @@ export default function SearchPage() {
                 <div className="w-24 h-24 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Code className="w-12 h-12 text-gray-400" />
                 </div>
-                <p className="text-gray-500 text-lg">No frameworks found matching "{searchTerm}"</p>
+                <p className="text-gray-500 text-lg">No frameworks found matching `{searchTerm}`</p>
                 <p className="text-gray-400 text-sm mt-2">Try adjusting your search terms</p>
               </div>
             )}
@@ -321,7 +321,7 @@ export default function SearchPage() {
                 <div className="w-24 h-24 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Package className="w-12 h-12 text-gray-400" />
                 </div>
-                <p className="text-gray-500 text-lg">No packages found matching "{searchTerm}"</p>
+                <p className="text-gray-500 text-lg">No packages found matching `{searchTerm}`</p>
                 <p className="text-gray-400 text-sm mt-2">Try adjusting your search terms</p>
               </div>
             )}

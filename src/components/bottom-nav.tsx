@@ -18,7 +18,7 @@ export default function BottomNav() {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 px-4 py-2 z-50">
-      <div className="flex justify-evenly items-center max-w-md mx-auto">
+      <div className="flex justify-evenly items-center w-full">
         {navItems.map(({ href, icon: Icon, label }) => {
           const isActive = pathname === href
           const isHome = href === "/"
@@ -31,15 +31,15 @@ export default function BottomNav() {
                 isActive
                   ? "text-blue-600 dark:text-blue-400"
                   : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100",
-                isHome && "scale-110",
+                isHome && "scale-105",
               )}
             >
               {isActive && (
-                <div className="absolute inset-0 bg-blue-50 dark:bg-blue-950/50 rounded-2xl scale-110 transition-all duration-200" />
+                <div className="absolute inset-0 bg-blue-50 dark:bg-blue-950/50 rounded-xl scale-110 transition-all duration-200" />
               )}
               <Icon
                 className={cn(
-                  "w-6 h-6 relative z-10 transition-all duration-200",
+                  "w-5 h-5 relative z-10 transition-all duration-200",
                   isActive && "scale-110",
                   isHome && "w-7 h-7",
                 )}
